@@ -9,4 +9,5 @@ import { MatAccordion } from '@angular/material/expansion';
 export class AppComponent {
   title = 'angular-material';
   panelOpenState = false;
+
 }

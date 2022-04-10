@@ -16,7 +16,7 @@
             <button mat-button color="accent">Accent</button>
             <button mat-button color="warn">Warn</button>
             <button mat-button disabled>Disabled</button>
-            <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+            <a mat-button href="#" target="_blank">Link</a>
           </div>
         </section>
         <mat-divider></mat-divider>
@@ -28,7 +28,7 @@
             <button mat-raised-button color="accent">Accent</button>
             <button mat-raised-button color="warn">Warn</button>
             <button mat-raised-button disabled>Disabled</button>
-            <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+            <a mat-raised-button href="#" target="_blank">Link</a>
           </div>
         </section>
         <mat-divider></mat-divider>
@@ -40,7 +40,7 @@
             <button mat-stroked-button color="accent">Accent</button>
             <button mat-stroked-button color="warn">Warn</button>
             <button mat-stroked-button disabled>Disabled</button>
-            <a mat-stroked-button href="https://www.google.com/" target="_blank">Link</a>
+            <a mat-stroked-button href="#" target="_blank">Link</a>
           </div>
         </section>
         <mat-divider></mat-divider>
@@ -52,7 +52,7 @@
             <button mat-flat-button color="accent">Accent</button>
             <button mat-flat-button color="warn">Warn</button>
             <button mat-flat-button disabled>Disabled</button>
-            <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>
+            <a mat-flat-button href="#" target="_blank">Link</a>
           </div>
         </section>
         <mat-divider></mat-divider>
@@ -207,15 +207,47 @@
         </mat-card>  
       </div>    
     </mat-tab>
-    <mat-tab label="Datepicker">
-      <mat-form-field appearance="fill">
-        <mat-label>Choose a date</mat-label>
-        <input matInput [matDatepicker]="picker">
-        <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field>      
+    <mat-tab label="Divider">
+      <div class="section-divider">
+        <mat-list>
+          <mat-list-item>Item 1</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>Item 2</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>Item 3</mat-list-item>
+        </mat-list>
+      </div>
+    </mat-tab>
+    <mat-tab label="Chips">
+      <div class="section-divider" style="margin: 5rem;">
+        <mat-chip-list aria-label="Fish selection">
+          <mat-chip>One fish</mat-chip>
+          <mat-chip>Two fish</mat-chip>
+          <mat-chip color="primary" selected>Primary fish</mat-chip>
+          <mat-chip color="accent" selected>Accent fish</mat-chip>
+        </mat-chip-list>
+        <div style="margin: 2rem;"></div>
+        <mat-chip-list aria-label="Dog selection">
+          <mat-chip>
+            <mat-chip-avatar>
+                <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu"/>
+            </mat-chip-avatar>
+            Dog one
+          </mat-chip>
+          <mat-chip color="primary">
+            <mat-chip-avatar>
+                <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu"/>
+            </mat-chip-avatar>
+            Dog two
+          </mat-chip>
+          <mat-chip color="accent">
+            <mat-chip-avatar>
+                <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu"/>
+            </mat-chip-avatar>
+            Dog three
+          </mat-chip>
+        </mat-chip-list>
+      </div>
     </mat-tab>
   </mat-tab-group>
 </div>
-
